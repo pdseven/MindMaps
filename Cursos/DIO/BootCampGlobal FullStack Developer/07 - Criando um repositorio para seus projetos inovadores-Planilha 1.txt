@@ -1,0 +1,28 @@
+Criando um repositório para seus projetos inovadores 
+
+  Introdução 
+    Git é uma plataforma para você gerenciar o seu código 
+    Usado para gerenciar o trabalho colaborativo e versionamento 
+    Ferramentas 
+      Github 
+        Maior 
+        Comprado pela microsoft 
+      Gitlabs 
+
+  Port que ter um repositório de projetos? 
+    O desenvolvimento de software é uma jornada 
+    Para se dominar é preciso dominar novos conceitos 
+    Util para mostar sua jornada como desenvolvedor para eventuais propostas de emprego 
+    O que os recrutadores buscam em um Github? 
+      Procurar as comunidades, ou tecnologias 
+      Tenha uma descrição alinhada as tecnologias que você mais conhece 
+        Coloque as tecnologias que você conhece 
+        alinhe com o linkedin 
+        No linkedin 
+          use o título para colocar suas palavras chave 
+      Alinhe seus projetos por repositórios 
+        No nome do repositório use uma keyword que remeta a tecnologia 
+      é preciso ter relevância, estar sempre ativo, produzindo código 
+      Essa pessoa é seguida pela comunidade? 
+      Use bem as descrições dos repositórios 
+      crie um bom readme, e indique os direitos autorais 
