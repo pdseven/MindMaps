@@ -1,0 +1,42 @@
+Laçamento do Global Fullstack Developer 
+
+  Abrange 10 paises que falam lngua portuguesa 
+
+  Lives de cdigo 
+
+  Lives de comunidade 
+    Mercado de Trabalho 
+    Faculdades 
+
+  Ciclo de apresentaes 
+
+  Continuao do ciclo de apresentaes 
+
+  O que o Global Fullstacke Developer 
+    Stacks que as empresas mais precisam 
+    Lgica de programao 
+    HTML 
+    CSS 
+    JavaScript 
+    Banco de dados PostGress 
+    Python 
+    Mentorias 
+    Git 
+    Toda semana tero mentorias 
+      Tcnicas 
+    Live Coding 
+    perodo de 2 meses 
+
+  Fullstack 
+    Programar envolve vrias tecnologias 
+    Frontend 
+    Backend 
+    O Fullstack domina as vrias tecnologias necessrias 
+
+  Comunidade 
+    Compartilhamento de experincias 
+    Auxilio em dvidas tcnicas 
+    Criao de projetos conjuntos 
+
+  Ambiente bsico de trabalho 
+    Tem que ser prtico 
