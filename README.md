@@ -1,6 +1,3 @@
 # MindMaps
 Mapas Mentais de Cursos e Livros
-
-
-teste de imagem armazenada no github
-![teste](https://raw.githubusercontent.com/pdseven/MindMaps/master/FunArq-fig1.png)
+Este repositório ira armazenar o mindmaps dos cursos que faço e dos livro que leio.
