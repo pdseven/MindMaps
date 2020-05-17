@@ -9,7 +9,22 @@ Criando um repositório para seus projetos inovadores
         Comprado pela microsoft 
       Gitlabs 
 
-  Port que ter um repositório de projetos? 
+  Criando sua conta e configurando o seu perfil 
+    Para criar conta 
+      Username 
+      Email 
+      Password 
+    Perguntar para entender o seu perfil 
+    Em settings permite alterar e complementar as informações 
+      Usar a Bio para colocar as keywords 
+
+  Especificando seu projeto para a comunidade e recrutadores 
+    README.md 
+      Usado para descrever o projeto 
+      Usa a marcação markdown 
+        Para facilitar pode se usar um editor de md (markdown) 
+
+  Por que ter um repositório de projetos? 
     O desenvolvimento de software é uma jornada 
     Para se dominar é preciso dominar novos conceitos 
     Util para mostar sua jornada como desenvolvedor para eventuais propostas de emprego 
@@ -26,3 +41,8 @@ Criando um repositório para seus projetos inovadores
       Essa pessoa é seguida pela comunidade? 
       Use bem as descrições dos repositórios 
       crie um bom readme, e indique os direitos autorais 
+
+  Criando seu primeiro repositório com um projeto 
+    No +, cria seu repositório 
+    Selecinar público ou privado 
+    Inicializar com ou sem README.md 
