@@ -1,0 +1,459 @@
+Arquitetura de sistema avançado 
+
+  Arquitetura de dados não estruturados e business intelligence 
+    Business Inteligence em Modelos de Dados 
+      Objetivos da Aula 
+        Business Intelligence em modelos de Dados 
+        Data Warehouse 
+        BigData - Dados Não estruturados 
+        Data Lake 
+      Requisitos Básicos 
+        Conhecimentos de Bancos de Dados 
+        Conhecimentos de Lógica 
+      BI - Business Intelligence 
+        é composto por 
+          Ferramentas 
+          Infraestrutura 
+          Profissionais (corpo técnico) 
+          Dados 
+            Vem de 
+              SGDBs 
+              Sistemas de operação 
+              Dados gerenciais 
+              Dados da operação 
+              Pesquisa de campo 
+              Indicadores de mercado 
+        Solution 
+          Infraestrutura 
+          Gerenciamento dos dados 
+          Analytics 
+          Compartilhamento 
+          Ferramentas gerais 
+        Ferramentas 
+          QlikView 
+          Qlik Sense 
+          Domo 
+          Tableau 
+          Microsoft Power BI 
+          Spotfire 
+          Oracle 
+          MicroStrategy 
+          IBM Cognos Analytics 
+          SAP BusinessObjects 
+          sas 
+    Aprenda sobre os conceitos de Data Warehouse 
+      É uma estratégia 
+        Um estilo de modelagem de dados para que eles sejam eficientes e satisfatórios 
+      Conceitos 
+        OLTP 
+          On-Line Transaction Processing 
+            Atende uma gama muito grande de usuários 
+            Realiza várias transações ao mesmo tempo 
+          Visão geral 
+            Foco 
+              Foco no nível operacional da organização. Visa a execução operacional do negócio 
+            Performance 
+              Alta  velocidade  na  manipulação  de  dados  operacionais,  porém ineficiente para a 
+              geração de análises gerenciais 
+            Estrutura dos dados 
+              Os  dados  são  estruturados  em  um  modelo relacional normalizado, otimizado para a 
+              utilização transacional. Os dados possuem alto nível de detalhes 
+            O  armazenamento  é  feito  em  sistemas  convencionais  de  banco de dados através dos 
+            sistemas de informações da organização 
+            Abrangência 
+              É utilizado por técnicos e analistas e engloba vários usuários da organização 
+            Frequência de atualização 
+              A  atualização  dos  dados  é feita no momento da transação. Frequência muito alta de 
+              atualizações 
+            Volatilidade 
+              Dados voláteis, passíveis de modificação e exclusão 
+            Tipos de permissões nos dados 
+              Podem ser feito leitura, inserção, modificação e exclusão dos dados 
+        OLAP 
+          On-Line Analytical Processing 
+            Tem uma gama mais reduzida de usuários 
+            Atende níveis gerenciais 
+          Visão geral 
+            Foco 
+              Foco  no  nível  estratégico  da  organização. Visa a análise empresarial e tomada de 
+              decisão 
+            Performance 
+              Otimização para a leitura e geração de análises e relatórios gerenciais 
+            Estrutura dos dados 
+              Os  dados  estão  estruturados na modelagem dimensional. Os dados normalmente possuem 
+              alto nível de sumarização 
+            Armazenamento 
+              O  armazenamento é feito em estruturas de data Warehouse com otimização no desempenho 
+              em grandes volumes de dados 
+            É utilizado pelos gestores e analistas para a tomada de decião 
+            Frequência de atualização 
+              A  atualização  das  informações  é  feita no processo de carga dos dados. Frequência 
+              baixa, podendo ser diária, semanal, mensal ou anual (ou critério específico) 
+            Volatilidade 
+              Dados  históricos  e não voláteis. Os dados não sofrem alterações, salvo necessidades 
+              específicas (por motivos de erros ou inconsistências de informações) 
+            Tipos de permissões nos dados 
+              É  permitido  apenas  a  inserção  e  leitura.  Sendo  que para o usuário está apenas 
+              disponível a leitura 
+      Como obter dados 
+        OLTP 
+          SQL? 
+            Pode provocar lentidão 
+            As consultas são muito grandes 
+            Consultas recorrentes 
+          OLAP DW 
+            Visão já consolidada dos dados 
+              Não existem joins das tabelas, os dados de cada consulta estão na mesma tabela 
+            Pode ser feito em banco de dados relacional ou NoSQL 
+            Não está diretamente ligado aos dados da operação 
+    O que é BigData e dados não estruturados 
+      O que é 
+        é um termo que descreve o grande volume de dados estruturados ou não 
+        Formatos diversos de informação de onde conseguimos retirar algum conhecimento 
+          Audio 
+          Vídeo 
+          Texto 
+          Logs 
+          Dados de sensores de dispositivos 
+      Dados estruturados 
+        Tem que seguir uma regra do dicionário de dados 
+        Gera segurança 
+        enrigece os tipos de dados que podem ser aceitos 
+      Dados Semi-estruturados 
+        XML 
+        RDF 
+        OWL 
+        JSON 
+        Podem manter e mudar informações sem ter que definir um dicionário de dados, mas mantem uma 
+        estrutura 
+        NoSQL - Not Only SQL 
+          Se comporta como banco de dados relacionais 
+          tem mais flexibilidade para inserir dados sem seguir uma regra muito específica 
+          Ferramentas 
+            Apache HBASE 
+            riak 
+            cassandra 
+            CouchDB 
+            redis 
+            mongoDB 
+      Dados Não Estruturados 
+        Uma grande coleção de informações 
+        Ferramentas 
+          hadoop 
+            HDFS 
+          Apache Spark 
+          presto 
+          ceph 
+          Apache Storm 
+          DataTorrent 
+          Google BigQuery 
+    Data Lake vs Big Data 
+      É uma forma de Big Data 
+      É um Big Data mais corporativo, tratado 
+      Armazena e organiza diversas fontes de dados 
+      Precisa de um sistema de Data Curation & Tranformation 
+        Organiza e cataloga os dados 
+      Core EDW / Datamarts 
+        Sistema de extração de informação dos dados 
+      Prática instalar o mongoDB 
+        instalação via Chocolatey 
+          choco install mongodb.install 
+
+  Fundamentos de arquitetura de aplicações em nuvem 
+    Arquitetura em nuvem e sua evolução 
+      Objetivos da Aula 
+        Cloud Computing 
+        Disponibilidade 
+        Serveless 
+      Requisitos Básicos 
+        Entendimento básico sobre arquitetura de sistemas 
+      Cloud Computing 
+        Gerenciamento de hardware/software 
+        Provedores de servidor e armazenamento 
+        Pague o que consumir 
+        SaaS 
+          IaaS 
+            Infrastructure as a service 
+            Provedores 
+              Google Cloud 
+              Amazon webservices 
+              Microsoft Azure 
+            Aluguel de maquina via internet 
+          PaaS 
+            Plataforma as a Service 
+            Provedores 
+              Terraform 
+              CloudFormation 
+            Prove toda uma plataforma, com backup e automação 
+          BasS 
+            Backend as a Service 
+              Mobile Backend as a Service 
+            Provê o backend como um serviço 
+            Provedores 
+              Firebase 
+          Provisionamento de Aplicativos 
+    Entenda sobre disponibilidade de aplicações 
+      Disponibilidade 
+        IaaS 
+          hardware e internet 
+        PaaS 
+          auto scale on the go 
+        BaaS 
+          não há backend service 
+        Kubernets (K8S 
+          No minimo 3 nodos e 3 instâncias 
+        Multiplos nodos 
+        Load balancer 
+    Aprenda a executar serviços com Serveless 
+      Serverless 
+        Sem Servidor 
+        Sem serviço "rodando" 
+        Sem down time 
+      Provedores 
+        API Gateway 
+        Amazon Kinesis 
+        AWS Lambda 
+        Amazon S3 
+
+  Conceitos de integração de sistemas e mensageria 
+    Aprenda o que é e como funciona arquitetura em mensageria 
+      Objetivos da aula 
+        Que é arquitetura em mensageria 
+        Comunicação assíncrona entre serviços 
+        Gerenciamento de erros na arquitetura assíncrona 
+      Requisitos Básicos 
+        Entendimento sobre RestAPI 
+        Conhecimento básico sobre message brokes 
+      O que é uma arquitetura em mensageria 
+        Permite  manter serviços que não se comunicam diretamente com aplicativos externos, mas que 
+        consomem mensagens 
+        Arquitetura 
+          Web apps 
+            Proxy HTTP 
+              Serviço 1 
+              Serviço 2 
+              Serviço 3 
+      Pros 
+        Desacoplamento 
+        Facil plug & play 
+        Comunicação assíncrona 
+        Simples escalabilidade 
+        Broadcasting 
+        Permite Event Source 
+          Fila de eventos que juntos irão retornar um estado 
+      Contras 
+        Single point of failure 
+        Difícil monitoramento 
+      Comunicação assíncrona entre os serviços 
+        O message broker gerencia o fluxo da comunicação 
+        Toda  requisição  e  resposta é enviada para o Mesage Broker e ele determina qual o próximo 
+        passo 
+    Gerenciando erros em uma arquitetura assíncrona 
+      Gerenciamento de erros 
+        Dead letter queue (Filas de re-tentativas) 
+          Tentar novamente caso no processamento tenha ocorrido erro 
+          Após x tentativas retornar o erro para o produtor da mensagem 
+        Monitoramento entre serviços 
+          Rastrear os pontos de onde chegou e gerou erro 
+        Rastreamento de fluxo 
+          Rasterar o ponto inicial de todo o fluxo 
+
+  Desenvolvimento e operação de software integrado 
+    O que é DevOps? 
+      Definição 
+        DevOps  é um termo criado para definir o conjunto de práticas que integram e automatizam os 
+        processos  entre  as  equipes  de  desenvolvimento,  operações  e de apoio (como QA) para a 
+        produção rápida e confiável de software 
+        Comunicação entre as equipes 
+        DevOps é uma mudança de mentalidade, uma cultura, um movimentos, uma filosofia 
+      Framwork CALMS 
+        Culture 
+          Cultura 
+          As ferramentas de automação são inúteis se os desenvolvedores não aderirem a cultura 
+          DevOps não resolve problemas de ferramentas. Resolve problemas humanos 
+        Automation 
+          Automatização 
+          Eliminar trabalho manual repetitivo 
+          Automatizar gera velocidade na entrega 
+          Compilação, teste, implementação e provisionamento automatizados são o pondo de partida 
+        Lean 
+          Metódologia Lean 
+          Focar nas entregas de valor ao cliente 
+          Ser objetivos e enxutos 
+          Conhecer nossas limitações e os gargalos do processo 
+          Melhoria contínua 
+        Measurement 
+          Mensuração 
+          DevOps é cíclico e infinito 
+          Obter métricas é o pronto de partida para novas melhorias 
+          Ajuda a prever possíveis incidentes 
+          Analisar falhas 
+        Sharing 
+          Compartilhamento 
+          Compartilhamento de infgormações 
+          Descentralização de conhecimento 
+          Evita que os processos se tornem dependentes 
+          Ajuda a criar times genéricos 
+          O time se torna autossustentável 
+      Os Três Caminhos 
+        Flow 
+          Fluxo 
+          Caminho trilhado entre a demanda e a entrega 
+          A otimização do fluxo visa eliminar 
+            desperdícios 
+            gargalos no processo 
+            transferência de responsabilidades 
+            tempos de espera 
+          Chave 
+            metodologias ágeis 
+            automatização dos processos 
+              integração contínua 
+              entrega contínua 
+        Feedback 
+          Cliclos rápidos de feedbacks 
+          visa 
+            resolver problemas o quanto antes 
+            testar tudo 
+            métrica sobre o valor entregado 
+          Chave 
+            Monitoramento 
+              Gera informações relevantes 
+        Learning 
+          Aprendizado contínuo ou experimentação 
+          visa 
+            gerar conhecimento 
+          Chave 
+            trabalho dinâmico 
+            realizar experimentos 
+            eliminar a cultura da culpa 
+            aumentar a colaboração 
+            aumentar o compartilhamento de conhecimento 
+      Entregando Software 
+        plan 
+          Microsoft Teams 
+          draw.io 
+          Balsamiq 
+          roadmunk 
+          Confluence 
+          Jira 
+        code 
+          Visaul Studio 
+          GitHub 
+          Sublime text 
+          cmder 
+          git 
+          VS Code 
+          notepad++ 
+        build 
+          Conteinerd 
+          docker 
+          NuGet 
+          npm 
+          cri-o 
+          .NET CLI 
+          MSBuild 
+        test 
+          Unit.net 
+          Loader.io 
+          Apacher Meter 
+          Selenium 
+          Runscope 
+          Postman 
+          sonarqube 
+          Code Climate 
+          codacy 
+        release 
+          Disponibilizar para o cliente 
+        deploy 
+          Implantação efetiva em produção 
+          Azure Pipelines 
+          circleci 
+          AppVeyor 
+          GitLab CI 
+          Travis CI 
+          Jenkins 
+        operate 
+          kubernetes 
+          rancher 
+          Microsoft Azure 
+          puppet 
+          terraform 
+          Chef 
+          OpenShift 
+          aws 
+        monitor 
+          Coletar métricas 
+          Datadog 
+          Prometheus 
+          AppMetrics 
+          Rollbar 
+          Zabbix 
+          New Relic 
+          Pushhover 
+          Seq 
+          monitis 
+      Objetivos da Aula 
+        DevOps - Conceito e Práticas 
+        Continuous Integration 
+        Contiuous Inspection 
+      Livro Recomendado 
+        Manual de DevOps 
+          Gene Kin, John Willis, Jez Humble, Patrick Debois, John Allspaw 
+      Requisitos Básicos 
+        Conhecimentos de infraestrutura 
+        Conhecimentos de testes 
+        Versionamento com Git 
+        Script (bash, power shell, etc) 
+      DevOps é a Intersção de 
+        Development 
+        Quality Assurance (QA) 
+        It Operations 
+    Continuous Integration 
+      Continuous Delivery 
+        Deploy requer aprovação 
+      Continuous Deployment 
+        Deploy automático 
+      Principais etapas 
+        construção 
+        Teste unitário 
+        analise da qualidade 
+        Empacotamento de release 
+        Tem limite na geração do artefato, não faz entrega 
+      Ferramentas 
+        circleci 
+        Azure Pipelines 
+        Travis CI 
+        AppVeyor 
+        GitLab CI 
+        Jenkins 
+      Pipelines 
+        Após a programação e controle de versão 
+        A  Continus Integration, faz sua parte de automação e entrega para a Contiunuous Deployment 
+        ou Delivery 
+    Continuous Inspection 
+      Code Quality Analisys 
+      Ferramentas 
+        sonarqube 
+        code climate 
+        codacy 
+      Complexidade Ciclomática 
+        Quantos caminhos diferentes seu código pode seguir em uma situação 
+      Complexidade Cognitiva 
+      Código Duplicado 
+        Não precisa ser o código exatamente igual, mas que tenha o mesmo objetivo 
+      Vulnerabilidades 
+        Code Smell 
+        Senha no código 
+        Função muito grande 
+      Padronização e Estilo 
+        Garante qualidade do código 
+      Débito Técnico 
+      Métricas 
+        Feedbaks antes de entrar em produção 
+      Validando Pull-Requests 
+
+Serviço Externo 
+
+Message Broker 
+
+Banco de dados 
