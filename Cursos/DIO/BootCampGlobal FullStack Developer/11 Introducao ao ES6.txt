@@ -1,0 +1,506 @@
+Introdução ao ES6 
+
+  Introdução ao ES6 
+    Objetivos da aula 
+      História e conceitos 
+      Tipos e variáveis 
+      Operadores 
+      Estrutura condicionais e estruturas de repetição 
+    Requisitos Básicos 
+      Acesso a um navegador 
+    História e conceitos 
+      Lançado em setembro de 1995 
+        Junto com o beta do Netscape 
+      Criado por Brendan Eich 
+        Nasceu em 1961 
+        Escrevia micro kernels para dsps 
+        Trabalhou na Netscape e na Mozilla 
+          Arquteto Chefe 
+      ECMAScript 
+        É uma especificação de uma linguagem de programação 
+      TC39 
+        É o comite responsável pela evolução do JavaScript 
+        O que faz uma proposta ser aceita é a maioria dos votos 
+        https://github.com/tc39/proposals 
+         https://github.com/tc39/proposals
+        Fluxo de proposta 
+          Stage 0: strawman 
+            Enviar formulário com a ideia para evoluir o ECMAScript 
+            Obrigatório o documento revisado 
+          Stage 1: proposal 
+            Surge a proposta formal da funcionalidade 
+            É elegido um campeão que seja menbro da TC39 
+            Precisa de uma boa definição e exemplos 
+          Stage 2: draft 
+            primeira versão da proposta 
+            Precisa ter uma descrição formal da sintaxe e semântica 
+          Stage 3: candidate 
+            Quase finalizada 
+            Precisa de um feedback de implementação 
+            Precisa de revisões 
+            Editor da especificação do ECMAScript precisa assinar 
+            Deve ter pelo menos duas implementações compatíveis com a especificação 
+          Stage 4: finished 
+            Pronta para ser incluída na específicação 
+            Tem que ter passado nos testes 
+            Ter experiência prática significativa 
+            Editor da especificação do ECMAScript precisa assinar 
+      ES2018 
+        Operadores rest/spread 
+        Iteração assíncrona 
+        Promise.prototype.finally() 
+      ES.Next 
+        Futuras implementações 
+      Conceitos da Linguagem 
+        Linguagem Interpretada 
+        Linguagem de tipagem fraca e dinâmica 
+          Não a verificação de tipagem 
+        Typescript 
+          É um superset da linguagem JavaScript 
+            Adiciona 
+              Interfaces 
+              Enums 
+              Tipos genéricos 
+        Flow 
+          Checagem de tipo 
+          Mas não é um superset 
+          Como uma vesrsão simplificada do typescrpit 
+        Funções de primeira classe e ordem maior 
+          A  função  pode  ser  atribuída  para  uma  variável  ou  estrutura de dados, passada por 
+          argumentos e ser retornada como resultado de uma função 
+        Closure 
+          Escopo léxico 
+          Capacidade de uma função lembrar do escopo onde ela foi criada 
+        Escopos 
+          Global 
+          Local 
+          Bloco 
+    Curry, Hoisting, Imutabilidade, Tipos e Variáveis 
+      Currying 
+        É  a  técnica  de  transformar  uma  função  com  N  parametros em uma função com apenas um 
+        parâmetro que irá retornar uma função para cada parâmetro que existia inicialmente 
+      Hoisting 
+        Levantas ou suspender algo 
+        Comportamento que ocorrem em declaração de variáveis e funções 
+        Dois tipo 
+          Variáveis 
+            Eleva apenas a criação 
+              Variável  que  é  usada  antes  de ser definida não apresenta um reference error, ela 
+              retorna undefined 
+              Isso  quer  dizer  que  o JavaScript eleva a declaração da variável para antes do seu 
+              uso. 
+          Função 
+            Eleva a função como um todo 
+              É o fato da named function pode ser declarada no final e usada no inicio 
+      Imutabilidade 
+        Os dados que são criado nunca mudam 
+        As  variáveis  não  mudam,  quando  você  precisa alterar um valor você copia para uma nova 
+        variável efetuando a alteração 
+      Tipos e variáveis 
+        variáveis 
+          var 
+            primeira 
+            Escopo global e de função 
+          let 
+            escopo de função e de bloco 
+          const 
+            escopo de função e de bloco 
+            Não pode ser alterado se for tipo primitivo 
+            Em arrays e objetos pode se manipular os itens, mas não pode mudar a atribuição 
+
+  Orientação a objetos e Design Patterns com a linguagem ES6 
+    Introdução a Orientação a Objetos 
+      Objetivos da Aula 
+        Herança 
+        Classes 
+        Modificadores de Acesso 
+        Encapsulamento 
+        Static 
+      Orientação a objetos 
+        Herança 
+          Baseada em protótipos 
+          prototype 
+            armazena as definições de um objeto 
+          __proto__ 
+          constructor 
+        Classes 
+          ES6 
+          Simplificação da herança de protótipos 
+          palavra chave class 
+        Modificadores de acesso 
+          O javascript não tem suporte ainda 
+          privado / publico 
+            # antes da variável torna ela privada 
+        Encapsulamento 
+          ocultar detalhes do funcionamento interno 
+          Subtópico 
+    Introdução a Design Patterns 
+      Objetivos da aula 
+        Definição 
+        Tipos 
+        Patterns mais utilizados 
+      Definição 
+        Padrões de projetos são soluções generalistas para problemas recorrentes 
+      A Pattern Language 
+        1978 
+        Christopher Alexander, Sara Ishikawa e Murray Silvertein 
+        253 tipos de problemas / desafiosde projetos 
+      Formato de um pattern 
+        Nome 
+        Exemplo 
+        Contexto 
+        Problemas 
+        Solução 
+      Using Pattern Languages for Object-Oriented Programs 
+        1987 
+        Kent Beck e Ward Cunningham 
+        5 padrões de projetos 
+      Design Patterns: Elements of Reusable Object-Oriented Software 
+        1994 
+        Gang of Four (GoF) 
+          Erich Gamma 
+          Richard Helm 
+          Ralph Johnson 
+          John Vlissides 
+        Tipos 
+          Criação 
+            Abstraem e/ou adiam o processo de criação dos objetos 
+            Ajuda  a  tornar  o  sistema independente de como seus objetos são criados, compostos e 
+            representados 
+            Padrões de criação mais famosos 
+              Abstract Factory 
+              Builder 
+              Factory Method 
+              Prototype 
+              Singleton 
+          Estruturais 
+            Se preocupam com a forma que as classes e objetos são compostos 
+            Padrões estruturais mais famosos 
+              Adapter 
+              Bridge 
+              Composite 
+              Decorator 
+              Facade 
+              Business Delegate 
+              Flyweight 
+              Proxy 
+          Comportamentais 
+            Se concentram nos algoritmos e atribuições de responsabilidades entre os objetos 
+            Trata tanto dos objetos quanto da comunicação entre objetos 
+            Padrões comportamentais mais famosos 
+              Chain of Responsibility 
+              Command 
+              Interpreter 
+              Iterator 
+              Mediator 
+              Observer 
+              State 
+              Strategy 
+              Template Method 
+              Visitor 
+      Patterns mais utilizados no JavaScript 
+        Factory 
+          Funções que retornam um onjeto, sem a necessidade de chamá-las com o new 
+        Singleton 
+          Criar  uma  única  instância  de  uma função construtora e retorná-la toda vez em que for 
+          necessário utilizá-la 
+          Exemplo JQuery 
+        Decorator 
+          Recebe  uma  função  como  parâmetro  e  estende  seu  comportamento  sem  modificá-la    
+          explicitamente 
+        Observer 
+          Monitora  alterações  em  uma  coleção de objetos e chama uma função caso haja mudança de 
+          estado 
+        Module 
+          Permite organizar melhor o código, sem a necessidade de expor variáveis globais 
+
+  Tipos, variáveis, operadores, condicionais e repetição em JavaScript ES6 
+    Tipos e variáveis 
+      Tipos 
+        Primitivos 
+          string 
+          number 
+          boolean 
+          null 
+          undefined 
+          symbol 
+            Adicionado no ES6 
+        Outros Tipos 
+          Object 
+          Function 
+          Array 
+      Operações em variáveis 
+        String 
+          .lenght 
+            retorna a quantidade de caracteres 
+          .split 
+            Cria um array de strings separando a string original pelo delimitador definido 
+          .replace 
+            Substitui  um  pedaço  da  string  por  outro,  o  primeiro  parâmetro  é o texto a ser 
+            encontrado e o segundo o que irá ser colocado no lugar dele 
+            Aceita Regex 
+          .slice 
+            Retorna uma fatia de uma string 
+            -1 para o ultimo caractere 
+            recebe dois parâmetros a posição inicial e a final 
+          .substr 
+            Faz  a  mesma  coisa  do  splice,  mas  os  parâmetros  são  o começo e a quantidade de 
+            caracteres a serem exibidos 
+        Number 
+          .toString 
+            Transformar número em string 
+          .toFixed 
+            recebe 1 número como parametro 
+            define a quantidade de casas decimais 
+          .parseFloat 
+            Converte uma string para float 
+            tipo number com casas decimais 
+          .parseInt 
+            Converte uma string para inter 
+            tipo number sem casas decimais 
+        Null 
+          valor nulo 
+          no typeof apresenta como object 
+        Undefined 
+          Variável declarada e não atribuída 
+        Object 
+          Uma coleção de chave: valor 
+          Consegue acessar os itens diretamente pelo índice 
+          .keys 
+            Retorna um array com as chaves de um objetc 
+          .values 
+            Retorna um array com os valores de um objeto 
+          .entires 
+            Retorna um array de arrays [chave, valor] 
+          Object.assign 
+            Recebe  como  parâmetros n objetos a serem unificados. O primeiro recebe os valores dos 
+            demais 
+            Recomendado usar para criar um novo objeto com os dados dos outros 
+          Object.freeze 
+            Recebe como parâmetro um objeto a ser congelado 
+            impede a alteração do objeto 
+          Object.seal 
+            Recebe como parâmetro um objeto 
+            Permite  alterar  os  valores  das  propriedades,  mas  não  permite  deletar nem criar 
+            propiedades 
+        Symbol 
+          São único mesmo que criados com o mesmo valor 
+          Uma propriedade única 
+          Não é percorrido no for in e outras estruturas de repetição 
+          Não é exibido no Object keys, nem values 
+          Object.getOwnProertySymbols 
+            recebe um objeto como parâmetro 
+            retorna um array com todos os símbolos sem as propriedades 
+          Reflect.ownKeys 
+            recebe um objeto como parâmetro 
+            retorna um array com todos as propriedades do objeto inclusive os símbolos 
+    Funções e Operadores 
+      Funções 
+        ES6 entra as arrow functions 
+          const arrowFn = () => {} 
+          Se tiver apenas uma expressão o retorno é implicito 
+          O .this referência o contexto da criação 
+        Na função normal o .this referência o contexto da execução 
+        Funções são objetos que permitem ser chamados 
+      Arrays 
+        .length 
+          Retorna a quantidade de elementos do array 
+        .isArray 
+          Verifica se a variável é um array 
+        .forEach((item, index, array) => {}) 
+          Itera sobre cada item 
+        .filter(função com retorno do que você deseja obter do array) 
+          Retorna um novo objeto 
+        .map 
+          Executa uma função para cada iteração 
+        .reduce( (variávelQueIraSerRetornada, itemASerIterado) => {} ) 
+          Vai retornar a operação gravada na variável 
+      Operadores 
+        Aritméticos 
+          % 
+            Módulo 
+            Retorna o resto da divisão 
+          Incremento 
+            ++x 
+              Incrementa depois retorna 
+            x++ 
+              Retona depois incrementa 
+          Decremento 
+            --x 
+              Decrementa depois retorna 
+            x-- 
+              Retona depois decrementa 
+          - 
+            Negação 
+          + 
+            Adição 
+          ** 
+            Exponenciação 
+          () 
+            Agrupamento 
+        Atribuição 
+          = 
+          Mescla atribuição com operação 
+            -= 
+            += 
+            *= 
+            /= 
+            %= 
+        Comparação 
+          == 
+            Igualdade 
+          === 
+            Igualdade Estrita 
+          != 
+            Não igualdade 
+          !== 
+            Não igualdade estrita 
+            Maior que 
+            Maior ou igual 
+          > 
+            Menor que 
+          >= 
+            Menor ou igual 
+        Condicional 
+          Ternário 
+            condição ? valorSeVerdadeiro : valorSeFalso 
+        Lógico 
+          && 
+            AND 
+          || 
+            OR 
+          !condição 
+            Não lógico 
+            Subtópico 
+          !! 
+            Conversão para booleano 
+        Spread 
+          ...ArrayExistente 
+            Atribui todos os itens de um array a um novo array 
+          Pode  ser  usado  na  execução  de  uma  função, se você tiver 3 parâmetros em um função, 
+          declare um array com os 3 e execute a função chamando ...ArrayDeclaradoComOsParametros 
+        in 
+          verifica se um valor contem outro 
+          valorContido in ValorContém 
+        instanceof 
+          Verificar se um objeto é instancia de outro 
+    Estruturas condicionais e repetição 
+      Estruturas condicionais 
+        if 
+          Executa código se a condição for verdadeira 
+          else 
+            Caso a condição do if seja falsa 
+          else if 
+            testa uma outra condição caso a do if seja falsa 
+        switch(valor) case 
+          se o valor for x executa o case x 
+          casa o valor não tenha um case referente executa o default 
+      Estruturas de repetição 
+        for 
+        while 
+          itera enquanto a condição for verdadeira 
+          é preciso incrementar o valor de teste dentro do laço, ou ficará preso nele 
+        do...while 
+          executa a primeira iteração depois verifica a condição 
+          é preciso incrementar o valor de teste dentro do laço, ou ficará preso nele 
+        for...in 
+          itera sobre valores e propriedades de um arrry 
+        for...of 
+          itera apenas nos valores de um array 
+        continue 
+          pula uma interação 
+        break 
+          interrompe a execução 
+
+  Manipulação e iteração de arrays 
+    Criando e manipulando arrays 
+      Objetivos da aula 
+        Criar um array 
+        Inserir e remover elementos 
+        Iterar elementos 
+        Buscar elementos 
+        Ordenar elementos 
+        Tranformar um array em outro tipo de dados 
+      Criar array 
+        const arr = [1 ,2 ,3]; 
+        const arr2 = new Array(1, 2, 3); 
+        const arr = Array.of(1, 2, 3); 
+        const arr = Array(3) 
+          cria um array com N posições vazias 
+          [empty x 3] 
+        const arr2 = Array(3, 2); 
+        const divs = document.queySelectorAll('div'); 
+          const arr = Array.from(divs); 
+      Inserir e remover elementos 
+        push 
+          adiciona um ou mais elemento no final de um array 
+          retorna o tamanho do array 
+        pop 
+          remove o ultimo elemento do array 
+          retorna o elemento removido 
+        unshift 
+          adiciona um o mais elementos no início do array 
+          retorna o tamanho do array 
+        shift 
+          remove o primeiro elemento do array 
+          retorna o elemento removido 
+        concat 
+          Concatena um ou mais arrays 
+          retorna um novo array 
+          Não altera os arrays originais 
+        slice 
+          retorna  um  novo  array  fatiando  o  array de acordo com o ínicio e o fim informados na 
+          chamada da função 
+        splice 
+          altera um array adicionando novos elementos enquanto remove elementos antigos 
+          retorna os itens removidos 
+    Iterar, buscar e transformar elementos 
+      Iterar elementos 
+        forEach 
+          executa uma ação para cada item do array 
+        map 
+          retorna um novo array, de mesmo tamanho, iterando cada item de um array 
+        flat 
+          Retorna  um  novo  array  com  todos  os  elementos de um sub-array concatenados de forma 
+          recursiva de acordo com a profundidade especificada(depth) 
+          a partir de um array de array, retorna um único array com todos os elementos 
+        flatMap 
+          retona um novo array assim como a função map e executa um flat de profundidade 0 
+        keys 
+          retorna um Array Iterator que contém as chaves para cada elemento do array 
+          percorre com .next() 
+        values 
+          retorna um Array Iterator que contém os valores de cada elemento do array 
+          percorre com .next() 
+        entries 
+          retorna um Array Iterator que contém os pares chave e valor de cada elemento do array 
+          percorre com .next() 
+      buscar elementos 
+        find 
+          retorna o primeiro item de um array que satisfaz a condição 
+          busca uma condição 
+        findIndex 
+          retorna o índice do primeiro item de um array que satisfaz a condição 
+        filter 
+          retorna um novo array com todos os elementos que satisfazem a condição 
+        indexOf 
+          retorna o primeiro índice em que um elemento pode ser encontrado no array 
+          busca pelo elemento 
+        lastIndexOf 
+          retorna o último índice em que um elemento pode ser encontrado no array 
+          busca pelo elemento 
+        includes 
+          retorna um booleano verificando se determinado elemento existe no array 
+        some 
+          retorna um booleano verificando se pelo menos um item de um array satisfaz a condição 
+        every 
+          retorna um booleano verificando se todos os itens de um array satisfazem a condição 
+      Ordenar elementos 
+        sort 
+          Ordena os elementos de um array de acordo com a condição 
+        reverse 
+          Inverte os elementos de um array 
+        join 
+          Junta todos os elementos de um array, separados por um delimitador e retorna uma string 
+        reduce 
+          retorna um novo tipo de dado iterando cada posição de um array 
